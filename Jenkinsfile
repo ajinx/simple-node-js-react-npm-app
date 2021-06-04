@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        dockerNode(image: 'node:6-alpine')
         sh 'npm install'
       }
     }
